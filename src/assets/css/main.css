@@ -1,0 +1,55 @@
+@import 'tailwindcss';
+@import './utilities.css';
+@import './components.css';
+
+@theme {
+  --color-primary: #165dff;
+  --color-secondary: #0cb6c7;
+  --color-success: #00b42a;
+  --color-warning: #ff7d00;
+  --color-danger: #f53f3f;
+  --color-dark: #1d2129;
+  --color-dark-2: #4e5969;
+  --color-light-1: #f2f3f5;
+  --color-light-2: #e5e6eb;
+  --color-light-3: #c9cdd4;
+}
+
+@custom-variant dark (&:where(.dark, .dark *)); /* 手动切换深色模式 */
+
+/* 基础样式 */
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+/* 滚动条样式优化 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* 动画效果 */
+.slide-down {
+  animation: slideDown 0.3s ease forwards;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
