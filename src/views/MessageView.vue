@@ -8,7 +8,7 @@
       <span v-if="hasNotify" class="absolute top-1 right-1 w-2 h-2 bg-danger rounded-full"></span>
     </button>
     <div
-      class="h-[calc(100%-5rem)] mx-auto top-[4.5rem] right-3 absolute bg-white/10 dark:bg-gray-800/70 backdrop-blur-lg p-6 rounded-xl w-[90vw] md:w-[400px] lg:w-[500px] shadow-lg z-50 transition-transform duration-300 ease-in-out overflow-y-auto"
+      class="h-[calc(100%-5rem)] mx-auto top-[4.5rem] right-3 absolute bg-white/10 dark:bg-gray-800/70 backdrop-blur-lg p-6 rounded-xl w-[90vw] md:w-[400px] lg:w-[500px] shadow-lg z-50 transition-transform duration-300 ease-in-out overflow-y-auto overflow-x-hidden"
       :class="[show ? '' : 'translate-x-full opacity-0 ']"
       ref="popupRef"
     >
