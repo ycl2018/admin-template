@@ -138,7 +138,7 @@ const toggleDarkMode = () => {
       </div>
 
       <!-- 右侧：用户信息和操作 -->
-      <div class="flex items-center space-x-4">
+      <div class="flex items-center space-x-2">
         <!-- 搜索框 -->
         <div class="relative hidden md:block">
           <input
@@ -161,9 +161,9 @@ const toggleDarkMode = () => {
         >
           <i
             v-if="darkMode"
-            class="fa fa-sun text-xl text-yellow-400 dark:inline theme-transition"
+            class="fa fa-sun text-yellow-400 dark:inline theme-transition"
           ></i>
-          <i v-else class="fa fa-moon text-xl text-gray-700 dark:hidden theme-transition"></i>
+          <i v-else class="fa fa-moon text-gray-700 dark:hidden theme-transition"></i>
         </button>
         <!-- 用户头像 -->
         <UserSettings> </UserSettings>
